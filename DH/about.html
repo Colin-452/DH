@@ -109,18 +109,19 @@
             <li><a href="about.html">Sitemap</a></li>
         </ul>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
-        function initMap() {
-            const sydney = { lat: -33.8688, lng: 151.2093 };
-            const map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: sydney
-            });
-            const marker = new google.maps.Marker({
-                position: sydney,
-                map: map
-            });
-        }
+      function initMap() {
+        const sydney = { lat: -33.8688, lng: 151.2093 };
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: sydney
+        });
+        const marker = new google.maps.Marker({
+          position: sydney,
+          map: map
+        });
+      }
     </script>
 </body>
 </html>
